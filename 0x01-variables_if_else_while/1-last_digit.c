@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <conio.h>
+#include <stdio.h>
 /**
  * main-task1
  *

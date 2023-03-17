@@ -1,30 +1,34 @@
 #include <stdlib.h>
-#include <stdio.=>
 #include <time.h>
+#include <stdio.h>
 
 /**
- * main - test code
+ * main - little test negativ
  *
- * Return : 0(Success)
+ * Return: 0 (Success)
  */
 
 int main(void)
-
 {
-        int n;
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
+	int n;
 
-        printf("%d" , n);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-        if (n > )
-        {
-                puts (" is positive ");
-        }
-        else if ( n== )
-        {
-                puts(" negative ");
-        }
-        return(0);
+	printf("%d", n);
 
+	if (n > 0)
+	{
+		puts(" is positive");
+	}
+	else if (n == 0)
+	{
+		puts(" is zero");
+	}
+	else
+	{
+		puts(" is negative");
+	}
+
+	return (0);
 }

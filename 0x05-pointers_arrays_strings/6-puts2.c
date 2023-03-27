@@ -1,32 +1,29 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
-  * main - check the code
- *
- * Return: Always 0.
- */
+*puts2 - Print characters of a string
+*@str: String to print
+*/
 
 void puts2(char *str)
 {
-	int longi = 0;
-	int t = 0;
+	int len = 0;
+	int l = 0;
 	char *y = str;
-	int o;
+	int z;
 
-	while(*y != '\0')
+	while (*y != '\0')
 	{
 		y++;
-		longi++;
-
+		len++;
 	}
-	t = longi -1;
-	for (o = 0 ; 0 <= t ; o++)
-	{ 
-		if (0 % 2==0)
+	l = len - 1;
+	for (z = 0; z <= l; z++)
+	{
+		if (z % 2 == 0)
 		{
-		_putchar(str[0]);
+			_putchar(str[z]);
 		}
-	}	
+	}
 	_putchar('\n');
 }	
